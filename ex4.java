@@ -1,35 +1,40 @@
+
 import java.util.Scanner;
 
+
+
 public class ex4 {
-    public static void main(String[] args) {
+    public static void main (String[] args) {
+   // code here.
+    float n1, n2;
+    Scanner leitor = new Scanner(System.in);
+        System.out.println("digite dois numeros");
 
-        Scanner leitor = new Scanner(System.in);
+        n1 = leitor.nextFloat();
+        n2 = leitor.nextFloat();
 
-        System.out.println("Digite seu plano de trabalho");
-        System.out.println("plano A,B ou C");
-        String plano = leitor.next().toUpperCase();
-        System.out.println("qual seu salario?");
-        int salario = leitor.nextInt();
+        if(n1>n2){
 
-        switch (plano){
-            case ("A"):
-                System.out.printf("Aumento de 10%");
-                double salarioA = (salario + (salario * 0.1));
-                System.out.printf("novo valor %.2f%n", salarioA);
-                break;
-            case ("B"):
-                System.out.println("Aumento de 15%");
-                double salarioB = (salario + (salario*0.15));
-                System.out.printf("novo valor %.2f%n", salarioB);
-                break;
-            case ("C"):
-                System.out.println("aumento de 20%");
-                double salarioC = (salario + (salario*0.20));
-                System.out.printf("novo valor %.2f%n", salarioC);
-                break;
-            default:
-                System.out.println("plano invalido");
-                break;
+            System.out.println(n1 + "\n" + n2);
+
+
         }
+
+        else{
+
+            System.out.println(n2 + "\n" + n1);
+
+
+
+        }
+
+
+
+
+
+
     }
+
+
+
 }

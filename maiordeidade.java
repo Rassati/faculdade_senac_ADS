@@ -1,19 +1,17 @@
 //TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
 // click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
 import java.util.Scanner;
-public class ex3 {
+public class maiordeidade {
     public static void main(String[] args) {
         Scanner leitor = new Scanner(System.in);
-        System.out.println("digite dois numeros");
+        System.out.println("Qual sua idade?");
         int numero = leitor.nextInt();
-        int numero2 = leitor.nextInt();
-        if (numero==numero2){
-            System.out.println("numeros iguais");
+        if (numero>18){
+            System.out.println("voce é maior de idade ");
             System.exit(0);
         }
         else {
-            int dif = Math.abs(numero-numero2);
-            System.out.println("diferença dos numeros = "+ dif);
+            System.out.println("voce é menor de idade");
         }
         leitor.close();
     }
