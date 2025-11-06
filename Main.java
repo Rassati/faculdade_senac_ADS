@@ -1,22 +1,17 @@
-import java.util.Scanner;
-
 //TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
 // click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
 public class Main {
     public static void main(String[] args) {
-        Scanner leitor = new Scanner(System.in);
-        int[] numeros = new int[10];
+        System.out.println("antes de chamar o metodo");
+        mensagem();
+        mensagem();
+        mensagem();
+        System.out.println("depois de chamar o metodo");
+    }
 
-
-        for (int i = 0; i <10 ; i++) {
-            System.out.println("DIGITE UM NUMERO");
-            numeros[i] = leitor.nextInt();
-        }
-        for (int i = 0; i <10; i++){
-
-            System.out.println("numero: "+ (i+1) + " = " + numeros[i]);
-
-        }
+    public static void mensagem(){
+        System.out.println("Meu primeiro programa com funcoes");
 
     }
+
 }
